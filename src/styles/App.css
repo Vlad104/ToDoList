@@ -1,0 +1,44 @@
+:root {
+  --backgroundColor: #181E24;
+  --backgroundLightColor: rgb(45, 57, 68);
+  --mainColor: #FFFFFF;
+  --secondColor: #3a80e2;
+  --secondDarkColor: #1b4279;
+}
+
+html {
+  font-size: 20px;
+}
+
+body {
+  background-color: #181E24;
+  outline: none;
+}
+
+#app {
+  font-family: 'Avenir', Helvetica, Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-align: center;
+  color: #2863b3;
+  margin-top: 60px;
+}
+
+* {
+  outline: none;
+}
+
+*::selection {
+  background: var(--mainColor);
+}
+
+a {
+  text-decoration: none;
+  user-select: none;
+}
+
+input[type=button],
+input[type=button]:focus,
+input[type=button]:active{
+	border:1px solid;
+}
