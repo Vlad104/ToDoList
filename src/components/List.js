@@ -18,6 +18,7 @@ class List extends Component {
     this.state = {list: new Array()};
     this.updateData = this.updateData.bind(this);
     this.resetData = this.resetData.bind(this);
+    this.deleteData = this.deleteData.bind(this);
     window.addEventListener("beforeunload", (ev) => {
         ev.preventDefault();
         localStorage.list = JSON.stringify(this.state.list);
@@ -36,10 +37,15 @@ class List extends Component {
       <div className="list">
         <Input updateData={this.updateData} resetData={this.resetData} />
         {this.state.list.map((item, index) => (
-          <Task key={index} text={item.text} />
+          <Task key={index} id={index} text={item.text} deleteTask={this.deleteData} />
         ))}
       </div>
     );
+  }
+  deleteData(id) {
+    let temp = this.state.list;
+    temp.splice(id, 1);
+    this.setState({list: temp});
   }
 
   updateData(data) {
