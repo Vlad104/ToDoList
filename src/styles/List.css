@@ -1,5 +1,5 @@
 .list {
-  margin: 10% auto auto auto;
+  margin: 4rem auto auto auto;
   width: var(--listWidth);
 
   display: flex;

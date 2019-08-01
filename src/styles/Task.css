@@ -1,18 +1,18 @@
 .task {
   position: relative;
-  color: #fff;
+  color: var(--mainColor);
   width: 100%;
   text-align: center;
   height: 2rem;
   box-sizing: border-box;
-  padding-top: 0.25rem;
+  /* padding-top: 0.25rem; */
   margin-top: 0.5rem;
   border-radius: 10px;
 }
 
 .task:hover {
-  border: solid 1px #FFF;
-  box-shadow: 0px 0px 0.4rem #FFF;
+  border: solid 1px var(--mainColor);
+  box-shadow: 0px 0px 0.4rem var(--mainColor);
 }
 
 .task:not(hover), .task:not(:focus) {
@@ -39,7 +39,11 @@
 }
 
 .task__text {
-  position: relative;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-overflow: ellipsis;
 }
 
 .task__text::before {
@@ -48,7 +52,7 @@
   width: 0;
   height: 2px;
   background: var(--darkMainColor);
-  top: calc(50% - 1px);
+  top: calc(50% + 1px);
   left: 0;
 }
 

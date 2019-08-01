@@ -13,17 +13,13 @@ html {
 }
 
 body {
-  background-color: #181E24;
+  background-color: var(--backgroundColor);
   outline: none;
-}
-
-#app {
   font-family: 'Avenir', Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
-  color: #2863b3;
-  margin-top: 60px;
+  color: var(--mainColor);
 }
 
 * {

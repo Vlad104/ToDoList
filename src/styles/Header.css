@@ -1,5 +1,6 @@
 .header {
   color: var(--mainColor);
   text-align: center;
+  margin-top: 2rem;
   /* font-size: 2rem; */
 }

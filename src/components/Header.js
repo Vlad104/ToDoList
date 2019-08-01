@@ -2,10 +2,10 @@ import React, { Component } from "react";
 
 import "../styles/Header.css";
 
-class Input extends Component {
+class Header extends Component {
   render() {
-    return <h1 className="header">To Do Queue</h1>;
+    return <h1 className="header">Hello there</h1>;
   }
 }
 
-export default Input;
+export default Header;
