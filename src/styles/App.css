@@ -2,12 +2,14 @@
   --backgroundColor: #181E24;
   --backgroundLightColor: rgb(45, 57, 68);
   --mainColor: #FFFFFF;
+  --darkMainColor: rgb(153, 153, 153);
   --secondColor: #3a80e2;
   --secondDarkColor: #1b4279;
+  --listWidth: 500px;
 }
 
 html {
-  font-size: 20px;
+  font-size: 24px;
 }
 
 body {

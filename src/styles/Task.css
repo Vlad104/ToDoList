@@ -12,7 +12,7 @@
 
 .task:hover {
   border: solid 1px #FFF;
-  box-shadow: 0px 0px 5px #FFF;
+  box-shadow: 0px 0px 0.4rem #FFF;
 }
 
 .task:not(hover), .task:not(:focus) {
@@ -27,4 +27,40 @@
   width: 1rem;
   height: 1rem;
   fill: var(--mainColor);
+}
+
+.task__check {
+  display: inline-block;
+  width: 1em;
+  height: 1em;
+  border: 1px var(--mainColor) solid;
+  border-radius: 50%;
+  box-sizing: border-box;
+}
+
+.task__text {
+  position: relative;
+}
+
+.task__text::before {
+  content: '';
+  position: absolute;
+  width: 0;
+  height: 2px;
+  background: var(--darkMainColor);
+  top: calc(50% - 1px);
+  left: 0;
+}
+
+.task__text:hover {
+  color: var(--darkMainColor);
+}
+
+.task__text:hover::before {
+  animation: canceling 0.6s ease-out 0s 1 normal forwards running;
+}
+
+@keyframes canceling {
+  0% {width: 0;}
+  100% {width: 100%;}
 }

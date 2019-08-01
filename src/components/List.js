@@ -4,14 +4,6 @@ import "../styles/List.css";
 import Task from './Task';
 import Input from './Input';
 
-const MOCK = [
-  {text: 'Задача 1'},
-  {text: 'Задача 2'},
-  {text: 'Задача 3'},
-  {text: 'Задача 4'},
-  {text: 'Задача 5'},
-];
-
 class List extends Component {
   constructor(props) {
     super(props);

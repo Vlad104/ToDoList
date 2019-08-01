@@ -1,6 +1,6 @@
 .list {
   margin: 10% auto auto auto;
-  width: 400px;
+  width: var(--listWidth);
 
   display: flex;
   flex-direction: column;
