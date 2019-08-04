@@ -7,7 +7,124 @@
   flex-direction: column;
 }
 
+.settings__item {
+  margin-top: 0.5rem;
+}
+
+.settings__button {
+  background-color: var(--backgroundColor);
+  border-radius: 50%;
+  color: var(--mainColor);
+  width: 2rem;
+  height: 2rem;
+  font-size: 1rem;
+}
+
+.settings__button_actived {
+  border-radius: 1rem;
+  width: 8rem;
+}
+
+.settings__button:active {
+  background-color: var(--mainColor);
+  box-shadow: 0px 0px 10px var(--mainColor);
+}
+
+.settings__button:hover {
+  box-shadow: 0px 0px 0.4rem var(--mainColor);
+}
+
+.settings__button:not(hover) {
+  transition: 0.3s;
+}
+
 .addictive {
+  margin-top: 1rem;
   display: flex;
   flex-direction: column;
+  width: 8rem;
+  border: solid 1px var(--mainColor); 
+  border-radius: 1rem;
+  padding: 0.4rem  0.8rem 0.8rem 0.8rem;
+  box-sizing: border-box;
+  font-size: 0.8rem;
+}
+
+.settings__input {
+  background-color: var(--backgroundColor);
+  color: var(--mainColor);
+  padding-left: 0.4rem;
+  height: 1rem;
+  border: solid 1px var(--mainColor);
+  border-radius: 0.2rem;
+}
+
+.settings__input:active {
+  background-color: var(--mainColor);
+  box-shadow: 0px 0px 10px var(--mainColor);
+}
+
+.settings__input:hover {
+  box-shadow: 0px 0px 0.4rem var(--mainColor);
+}
+
+.settings__input:not(hover) {
+  transition: 0.3s;
+}
+
+.color {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  justify-content: space-between;
+}
+
+.color__input {
+  border: solid 1px var(--mainColor);
+  border-radius: 0.2rem;
+  background: none;
+  overflow: hidden;
+  outline: none;
+  cursor: inherit;
+  height: 1rem;
+}
+
+.color__input:active {
+  background-color: var(--mainColor);
+  box-shadow: 0px 0px 10px var(--mainColor);
+}
+
+.color__input:hover {
+  box-shadow: 0px 0px 0.4rem var(--mainColor);
+}
+
+.color__input:not(hover) {
+  transition: 0.3s;
+}
+
+.button-panel {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  justify-content: space-between;
+}
+
+.button-panel__button {
+  width: 45%;
+  background-color: var(--backgroundColor);
+  color: var(--mainColor);
+  border-radius: 0.2rem;
+}
+
+.button-panel__button:active {
+  background-color: var(--mainColor);
+  box-shadow: 0px 0px 10px var(--mainColor);
+}
+
+.button-panel__button:hover {
+  box-shadow: 0px 0px 0.4rem var(--mainColor);
+}
+
+.button-panel__button:not(hover) {
+  transition: 0.3s;
 }

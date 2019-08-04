@@ -13,7 +13,7 @@ class Input extends Component {
   render() {
     return (
       <div className="input">
-        <input className="input__text" type="text" value={this.state.input} onChange={this.updateInput} onKeyDown={this.handleKeyDown}/>
+        <input className="input__text" type="text" value={this.state.input} onChange={this.updateInput} onKeyDown={this.handleKeyDown} placeholder="New task ..." />
         <input
           className="input__button"
           type="button"
